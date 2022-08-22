@@ -21,6 +21,10 @@ h1 {
 }
 
 h2 {
+    font-size: 2rem;
+}
+
+h3 {
     font-size: 1.3125rem;
 }
 
@@ -64,11 +68,9 @@ header {
     justify-content: center;
     padding: 2rem 1.5rem;
     background-color: #D8D8D8;
-    border: 3px solid blue;
 }
 
 header .wrapper {
-    border: 3px solid yellow;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -77,18 +79,15 @@ header .wrapper {
 header img {
     width: 60%;
     margin-right: 0.75rem;
-    border: 3px solid green;
 }
 
 header .content {
     display: flex;
     flex-direction: column;
     margin-left: 0.75rem;
-    border: 3px solid green;
 }
 
 header .button {
-    border: 3px solid red;
     width: 80%;
     text-align: center;
     background-color: #4A4A4A;
@@ -103,18 +102,15 @@ header .button {
     justify-content: center;
     padding: 2rem 1.5rem;
     background-color: #F3F5F5;
-    border: 3px solid blue;
 }
 
 .information .wrapper {
-    border: 3px solid yellow;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
 .information .main {
-    border: 3px solid violet;
     width: 60%;
     padding-right: 1.5rem;
     border-right: 2px solid #E0E2E2;
@@ -128,7 +124,6 @@ header .button {
 .information .sub-headers {
     display: flex;
     flex-direction: column;
-    border: 3px solid violet;
     width: 40%;
 }
 
@@ -136,7 +131,6 @@ header .button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 3px green solid;
 }
 
 #lecture {
@@ -159,3 +153,121 @@ header .button {
 }
 
 /*Start Learning*/
+.start-learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background-color: #D8D8D8;
+}
+
+.start-learning .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.start-learning .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.start-learning .card {
+    width: 33.3125rem;
+    margin: 1rem;
+    background-color: #fff;
+}
+
+.start-learning img {
+    height: auto;
+    width: 100%;
+}
+
+.start-learning .text {
+    margin-top: -1.5rem;
+    padding: 1rem 1rem 1.5rem;
+}
+
+.start-learning p {
+    color: #767676;
+}
+
+/*Thesis Exhibit*/
+.thesis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background-color: #F3F5F5;
+}
+
+.thesis .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thesis .row {
+    display: flex;
+    flex-direction: col;
+    align-items: flex-start;
+}
+
+.thesis .main {
+    width: 60%;
+    padding-right: 1.5rem;
+}
+
+.thesis video {
+    width: 100%;
+}
+
+.thesis aside {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#Fisma, #now-then {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#Fisma {
+    background-color: #D8D8D8;
+}
+
+.sub-header img {
+    height: auto;
+    width: 35%;
+    margin: 1rem;
+}
+
+.sub-header .text {
+    padding: 0 0.5rem;
+}
+
+/*Footer*/
+footer {
+    background-color: #F3F5F5;
+}
+
+footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: #767676;
+    padding: 0 0.5rem
+}
