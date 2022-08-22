@@ -256,6 +256,7 @@ header .button {
 /*Footer*/
 footer {
     background-color: #F3F5F5;
+    border-top: 2px solid #E0E2E2;
 }
 
 footer .wrapper {
