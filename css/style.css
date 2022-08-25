@@ -44,6 +44,10 @@ nav .wrapper {
     align-items: center;
 }
 
+.mobile-wrapper {
+    display: none;
+}
+
 .logo {
     display: flex;
     flex-direction: row;
@@ -61,10 +65,29 @@ nav span {
     color: #000;
 }
 
+/*Nav Media Query*/
+@media only screen and (min-width: 200px) and (max-width: 480px) {
+    nav .wrapper {
+        display: none;
+    }
+
+    .mobile-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-wrapper .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
 /*Learn Something New Everyday*/
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     padding: 2rem 1.5rem;
     background-color: #D8D8D8;
@@ -72,8 +95,9 @@ header {
 
 header .wrapper {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.75rem;
 }
 
 header img {
@@ -84,7 +108,6 @@ header img {
 header .content {
     display: flex;
     flex-direction: column;
-    margin-left: 0.75rem;
 }
 
 header .button {
@@ -94,6 +117,76 @@ header .button {
     color: #fff;
     padding: 0.5rem 0;
 }
+
+header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Learn Something New Everyday Query*/
+@media only screen and (min-width:200px) and (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .wrapper {
+        align-items: center;
+        margin: 0;
+        padding: 0 1rem 2rem;
+    }
+
+    header img {
+        width: 100%;
+        margin:0;
+    }
+
+    header .button {
+        padding: 0;
+        background-color: #9B9B9B;
+        font-weight: bold;
+        width: 100%;
+    }
+}
+
+/*@media only screen and (min-width: 200px) and (max-width: 480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #D8D8D8;
+        border: 3px solid blue;
+    }
+    
+    header .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: 3px solid yellow;
+    }
+    
+    header img {
+        width: 100%;
+        border: 3px solid violet;
+    }
+    
+    header .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border: 3px solid violet;
+    }
+    
+    header .button {
+        width: 80%;
+        text-align: center;
+        background-color: #9B9B9B;
+        color: #fff;
+        padding: 0.5rem 0;
+    }
+}*/
 
 /*More Information*/
 .information {
