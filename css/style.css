@@ -174,7 +174,7 @@ More Information
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0 1.5rem;
+    padding-left: 1.5rem;
     background-color: #F3F5F5;
 }
 
@@ -363,24 +363,19 @@ Thesis Exhibit
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 1.5rem;
-    background-color: #F3F5F5;
-}
-
-.thesis .wrapper {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding: 2rem 0 2rem 1.5rem;
+    background-color: #F3F5F5;
 }
 
 .thesis .row {
     display: flex;
-    flex-direction: col;
+    flex-direction: row;
     align-items: flex-start;
 }
 
-.thesis .main {
+/*Main Article*/
+.thesis-main {
     width: 60%;
     padding-right: 1.5rem;
 }
@@ -389,6 +384,7 @@ Thesis Exhibit
     width: 100%;
 }
 
+/*Sidebar*/
 .thesis aside {
     display: flex;
     flex-direction: column;
@@ -415,6 +411,31 @@ Thesis Exhibit
     padding: 0 0.5rem;
 }
 
+/*Thesis Exhibit Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 480px) {
+    .thesis {
+        padding: 1rem 0 1.5rem 0;
+        /*margin: 1rem 0 ;*/
+    }
+    
+    .thesis-main {
+        width: 100%;
+        padding: 0;
+        /*margin-bottom: 1.5rem;*/
+    }
+    
+    .thesis aside {
+        display: none;
+    }
+
+    .thesis h3, p {
+        display: none;
+    }
+
+    .thesis h2 {
+        margin: 1rem 0;
+    }
+}
 
 
 /*--------------------------------------
