@@ -401,13 +401,13 @@ Thesis Exhibit
     background-color: #D8D8D8;
 }
 
-.sub-header img {
+.thesis-block img {
     height: auto;
     width: 35%;
     margin: 1rem;
 }
 
-.sub-header .text {
+.thesis-block .text {
     padding: 0 0.5rem;
 }
 
@@ -428,7 +428,7 @@ Thesis Exhibit
         display: none;
     }
 
-    .thesis h3, p {
+    .thesis-main .text {
         display: none;
     }
 
@@ -442,20 +442,39 @@ Thesis Exhibit
 Footer
 --------------------------------------*/
 footer {
-    background-color: #F3F5F5;
-    border-top: 2px solid #E0E2E2;
-}
-
-footer .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
+    background-color: #F3F5F5;
+    border-top: 2px solid #E0E2E2;
+    border: 3px solid blue;
 }
+
+/*footer .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border: 3px solid yellow;
+}*/
 
 footer a {
     text-decoration: none;
     color: #767676;
     padding: 0 0.5rem
+}
+
+/*Footer Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 480px) {
+    footer {
+        border-top: none;
+        padding: 1rem 0;
+    }
+    
+    .footer-links {
+        display: none;
+    }
 }
