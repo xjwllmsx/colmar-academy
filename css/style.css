@@ -1,4 +1,6 @@
-/*Universal Styles*/
+/*--------------------------------------
+Universal Styles
+--------------------------------------*/
 html {
     font-size: 16px;
     color: #4A4A4A;
@@ -28,7 +30,11 @@ h3 {
     font-size: 1.3125rem;
 }
 
-/*Navigation*/
+
+
+/*--------------------------------------
+Navigation
+--------------------------------------*/
 nav {
     display: flex;
     flex-direction: column;
@@ -37,6 +43,7 @@ nav {
     padding: 0 1.5rem;
 }
 
+/*Desktop Wrapper*/
 nav .wrapper {
     display: flex;
     flex-direction: row;
@@ -44,10 +51,12 @@ nav .wrapper {
     align-items: center;
 }
 
+/*Mobile Wrapper*/
 .mobile-wrapper {
     display: none;
 }
 
+/*Logo*/
 .logo {
     display: flex;
     flex-direction: row;
@@ -55,6 +64,7 @@ nav .wrapper {
     align-items: center;
 }
 
+/*Navigation Links*/
 nav span {
     color: #9B9B9B;
 }
@@ -65,7 +75,7 @@ nav span {
     color: #000;
 }
 
-/*Nav Media Query*/
+/*Navigation Media Query for Mobile*/
 @media only screen and (min-width: 200px) and (max-width: 480px) {
     nav .wrapper {
         display: none;
@@ -84,7 +94,11 @@ nav span {
     }
 }
 
-/*Learn Something New Everyday*/
+
+
+/*--------------------------------------
+Learn Something New Everyday
+--------------------------------------*/
 header {
     display: flex;
     flex-direction: row;
@@ -100,16 +114,19 @@ header .wrapper {
     margin-left: 0.75rem;
 }
 
+/*Image*/
 header img {
     width: 60%;
     margin-right: 0.75rem;
 }
 
+/*Header Content*/
 header .content {
     display: flex;
     flex-direction: column;
 }
 
+/*Button*/
 header .button {
     width: 80%;
     text-align: center;
@@ -123,7 +140,7 @@ header a {
     color: #fff;
 }
 
-/*Learn Something New Everyday Query*/
+/*Learn Something New Everyday Media Query for Mobile*/
 @media only screen and (min-width:200px) and (max-width: 480px) {
     header {
         display: flex;
@@ -150,102 +167,125 @@ header a {
     }
 }
 
-/*@media only screen and (min-width: 200px) and (max-width: 480px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #D8D8D8;
-        border: 3px solid blue;
-    }
-    
-    header .wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        border: 3px solid yellow;
-    }
-    
-    header img {
-        width: 100%;
-        border: 3px solid violet;
-    }
-    
-    header .content {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        border: 3px solid violet;
-    }
-    
-    header .button {
-        width: 80%;
-        text-align: center;
-        background-color: #9B9B9B;
-        color: #fff;
-        padding: 0.5rem 0;
-    }
-}*/
-
-/*More Information*/
+/*--------------------------------------
+More Information
+--------------------------------------*/
 .information {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    padding: 2rem 1.5rem;
+    padding: 0 1.5rem;
     background-color: #F3F5F5;
 }
 
-.information .wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-}
-
-.information .main {
+/*Main Article*/
+.info-main {
     width: 60%;
     padding-right: 1.5rem;
+    padding: 2rem 0;
     border-right: 2px solid #E0E2E2;
 }
 
-.information img {
+.info-main img {
     width: 100%;
     margin-right: 1.5rem;
 }
 
-.information .sub-headers {
+.info-links {
     display: flex;
     flex-direction: column;
     width: 40%;
+    padding: 2rem 0;
 }
 
-#orientation, #campus, #lecture {
+/*Sidebar*/
+.info-block {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+#orientation {
+    border-bottom: 2px solid #E0E2E2;
+    margin-bottom: 2px;
+}
+
+#campus {
+    border-top: 2px solid #E0E2E2;
+
 }
 
 #lecture {
     background-color: #D8D8D8;
 }
 
-.sub-headers img {
-    height: auto;
+.info-links .desktop-img {
     width: 35%;
+    height: auto;
     margin: 1rem;
 }
 
-.sub-headers .text {
+.info-links .mobile-img {
+    display: none;
+}
+
+.info-links .text {
     padding: 0 0.5rem;
 }
 
-.sub-headers a {
+.info-block a {
     text-decoration: none;
     color: #65A0E5;
 }
 
-/*Start Learning*/
+/*More Information Media Query*/
+@media only screen and (min-width:200px) and (max-width: 480px) {
+
+    .information {
+        padding: 1rem 1rem 0;
+    }
+
+    .info-main {
+        display: none;
+    }
+
+    .info-links {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info-block {
+        display: block;
+    }
+
+    #orientation, #campus, #lecture {
+        border: 0;
+        margin-bottom: 2rem;
+    }
+
+    #campus, #lecture {
+        margin-top: 2rem;
+        background-color: #F3F5F5;
+    }
+
+    .info-block .desktop-img {
+        display: none;
+    }
+
+    .info-block .mobile-img {
+        display: block;
+        width: 100%;
+    }
+
+    .info-block .text {
+        padding: 0 1rem;
+    }
+}
+
+
+/*--------------------------------------
+Start Learning
+--------------------------------------*/
 .start-learning {
     display: flex;
     flex-direction: column;
@@ -289,7 +329,10 @@ header a {
     color: #767676;
 }
 
-/*Thesis Exhibit*/
+
+/*--------------------------------------
+Thesis Exhibit
+--------------------------------------*/
 .thesis {
     display: flex;
     flex-direction: column;
@@ -346,7 +389,11 @@ header a {
     padding: 0 0.5rem;
 }
 
-/*Footer*/
+
+
+/*--------------------------------------
+Footer
+--------------------------------------*/
 footer {
     background-color: #F3F5F5;
     border-top: 2px solid #E0E2E2;
