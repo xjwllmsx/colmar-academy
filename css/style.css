@@ -290,16 +290,9 @@ Start Learning
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 1.5rem;
-    background-color: #D8D8D8;
-}
-
-.start-learning .wrapper {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0 3rem;
+    padding: 2rem 4.5rem;
+    background-color: #D8D8D8;
 }
 
 .start-learning .row {
@@ -329,6 +322,39 @@ Start Learning
     color: #767676;
 }
 
+/*Start Learning Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 480px) {
+    .start-learning {
+        background-color: #F5F4F5;
+        border-bottom: 2px solid #E9EAEA;
+        border-top: 2px solid #E9EAEA;
+        padding: 2rem 1rem;
+    }
+
+    .start-learning .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start-learning .card {
+        width: 100%;
+        background-color: #D8D8D8;
+        margin: 0.5rem 0;
+    }
+
+    .start-learning .text {
+        margin: 1rem;
+        padding: 0;
+    }
+
+    .start-learning img {
+        display: none;
+    }
+
+    .start-learning p {
+        display: none;
+    }
+}
 
 /*--------------------------------------
 Thesis Exhibit
