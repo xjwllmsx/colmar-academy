@@ -449,17 +449,7 @@ footer {
     padding: 1rem 1.5rem;
     background-color: #F3F5F5;
     border-top: 2px solid #E0E2E2;
-    border: 3px solid blue;
 }
-
-/*footer .wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    border: 3px solid yellow;
-}*/
 
 footer a {
     text-decoration: none;
