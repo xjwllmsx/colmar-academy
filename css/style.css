@@ -461,7 +461,7 @@ footer a {
 @media only screen and (min-width:200px) and (max-width: 480px) {
     footer {
         border-top: none;
-        padding: 1rem 0;
+        padding: 1rem;
     }
     
     .footer-links {
