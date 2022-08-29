@@ -3,6 +3,9 @@
     <head>
         <title>Colmar Academy</title>
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
@@ -22,7 +25,7 @@
                 <div class="wrapper">
                     <!--Logo-->
                     <div class="logo">
-                        <img src="./resources/images/ic-logo.svg" alt="The Colmar Academy logo">
+                        <img src="./resources/images/ic-logo.svg" alt="The Colmar Academy logo" class="gold-filter">
                         <p><strong>COLMAR</strong><span>ACADEMY</span></p>
                     </div>
                     <!--Navigation Links-->
@@ -38,10 +41,10 @@
                 <div class="mobile-wrapper">
                     <!--Row-->
                     <div class="row">
-                        <a href="#"><img src="./resources/images/ic-logo.svg"></a>
-                        <a href="#"><img src="./resources/images/ic-on-campus.svg"></a>
-                        <a href="#"><img src="./resources/images/ic-online.svg"></a>
-                        <a href="#"><img src="./resources/images/ic-login.svg"></a>
+                        <a href="#" class="white-filter"><img src="./resources/images/ic-logo.svg"></a>
+                        <a href="#" class="white-filter"><img src="./resources/images/ic-on-campus.svg"></a>
+                        <a href="#" class="white-filter"><img src="./resources/images/ic-online.svg"></a>
+                        <a href="#" class="white-filter"><img src="./resources/images/ic-login.svg"></a>
                     </div>
                 </div>
 
@@ -60,12 +63,10 @@
                     <!--Header content-->
                     <div class="content">
                         <h1>Learn something new everyday</h1>
-                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        <h3 class="h3-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
                     </div>
                     <!--Button-->
-                    <div class="button">
-                        <a href="#"><p>Start here</p></a>
-                   </div>
+                    <a id="header-button" href="#">Start here</a>
                 </div>
                 
             </header>
@@ -126,7 +127,7 @@
             Start Learning
             ----------------------------------------->
             <div class="start-learning">
-                <h2>Start learning</h2>
+                <h2 class="h2-white">Start learning</h2>
                 <div class="row">
 
                     <!--Software Engineering Card-->
@@ -203,7 +204,7 @@
                 <!--Main Article w/ Video-->
                 <div class="row">
                     <section class="thesis-main">
-                        <video src="./resources/videos/thesis.mp4" controls></video>
+                        <video src="./resources/videos/thesis.mp4" autoplay muted loop></video>
                         <div class="text">
                             <h3>Reimagine urban</h3>
                             <p>Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
