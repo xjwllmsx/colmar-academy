@@ -1,10 +1,11 @@
 /*--------------------------------------
 Universal Styles
 --------------------------------------*/
+
 html {
     font-size: 16px;
     color: #4A4A4A;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -15,6 +16,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 90rem;
     /*padding: 0 1.5rem;*/
 }
 
@@ -24,10 +27,20 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: #002e54;
+}
+
+.h2-white {
+    color: #fff;
 }
 
 h3 {
     font-size: 1.3125rem;
+    color: #002e54;
+}
+
+.h3-white {
+    color: #fff;
 }
 
 
@@ -41,6 +54,9 @@ nav {
     justify-content: center;
     height: 4rem;
     padding: 0 1.5rem;
+    background-color: #002e54;
+    color: #fff;
+    border-bottom: 3px solid #cdb684;
 }
 
 /*Desktop Wrapper*/
@@ -64,19 +80,31 @@ nav .wrapper {
     align-items: center;
 }
 
+.gold-filter {
+    filter: invert(100%) sepia(21%) saturate(5683%) hue-rotate(306deg) brightness(87%) contrast(84%);
+}
+
 /*Navigation Links*/
-nav span {
-    color: #9B9B9B;
+nav strong {
+    color: #cdb684;
 }
 
 .nav-links a {
     padding-left: 1rem;
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+/*Navigation Media Query for Desktop*/
+@media only screen and (min-width:771px) {
+    .nav-links a:hover {
+        color: #cdb684;
+    }
 }
 
 /*Navigation Media Query for Mobile*/
-@media only screen and (min-width: 200px) and (max-width: 480px) {
+@media only screen and (min-width: 200px) and (max-width: 770px) {
     nav .wrapper {
         display: none;
     }
@@ -92,6 +120,10 @@ nav span {
         justify-content: space-between;
         align-items: center;
     }
+
+    .white-filter {
+        filter: invert(100%) sepia(11%) saturate(7487%) hue-rotate(295deg) brightness(115%) contrast(115%);
+    }
 }
 
 
@@ -104,13 +136,15 @@ header {
     flex-direction: row;
     justify-content: center;
     padding: 2rem 1.5rem;
-    background-color: #D8D8D8;
+    background-color: #002e54;
+    color: #fff;
 }
 
 header .wrapper {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     margin-left: 0.75rem;
 }
 
@@ -124,24 +158,33 @@ header img {
 header .content {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 /*Button*/
-header .button {
+#header-button {
     width: 80%;
     text-align: center;
-    background-color: #4A4A4A;
-    color: #fff;
-    padding: 0.5rem 0;
+    background-color: #cdb684;
+    padding: 0.75rem 0;
+    border-radius: 4rem;
+    color: #002e54;
+    border: 4px solid #002e54;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-header a {
-    text-decoration: none;
-    color: #fff;
+/*Learn Something New Everyday Media Query for Desktop*/
+@media only screen and (min-width:771px) {
+    #header-button:hover {
+        background-color: #002e54;
+        border: 4px solid #cdb684;
+        color: #fff;
+    }
 }
 
 /*Learn Something New Everyday Media Query for Mobile*/
-@media only screen and (min-width:200px) and (max-width: 480px) {
+@media only screen and (min-width:200px) and (max-width: 770px) {
     header {
         display: flex;
         flex-direction: column;
@@ -181,14 +224,13 @@ More Information
 /*Main Article*/
 .info-main {
     width: 60%;
-    padding-right: 1.5rem;
-    padding: 2rem 0;
-    border-right: 2px solid #E0E2E2;
+    padding: 2rem 1.5rem;
+    border-right: 2px solid #002e54;
 }
 
 .info-main img {
     width: 100%;
-    margin-right: 1.5rem;
+    margin-right: 0 1.5rem;
 }
 
 .info-links {
@@ -205,18 +247,8 @@ More Information
     align-items: center;
 }
 
-#orientation {
-    border-bottom: 2px solid #E0E2E2;
-    margin-bottom: 2px;
-}
-
-#campus {
-    border-top: 2px solid #E0E2E2;
-
-}
-
-#lecture {
-    background-color: #D8D8D8;
+#orientation, #campus {
+    border-bottom: 2px solid #002e54;
 }
 
 .info-links .desktop-img {
@@ -238,8 +270,24 @@ More Information
     color: #65A0E5;
 }
 
-/*More Information Media Query*/
-@media only screen and (min-width:200px) and (max-width: 480px) {
+/*More Information Media Query for Desktop*/
+@media only screen and (min-width: 771px) {
+    .info-block:hover {
+        background-color: #002e54;
+        color: #fff;
+    }
+    
+    .info-block:hover h3  {
+        color: #fff;
+    }
+    
+    .info-block:hover a {
+        color: #cdb684;
+    }
+}
+
+/*More Information Media Query for Mobile*/
+@media only screen and (min-width:200px) and (max-width: 770px) {
 
     .information {
         padding: 1rem 1rem 0;
@@ -292,7 +340,8 @@ Start Learning
     justify-content: center;
     align-items: center;
     padding: 2rem 4.5rem;
-    background-color: #D8D8D8;
+    background-color: #002e54;
+    color: #fff;
 }
 
 .start-learning .row {
@@ -306,11 +355,14 @@ Start Learning
     width: 33.3125rem;
     margin: 1rem;
     background-color: #fff;
+    border-radius: 0.53rem;
 }
 
 .start-learning img {
     height: auto;
     width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 }
 
 .start-learning .text {
@@ -323,11 +375,10 @@ Start Learning
 }
 
 /*Start Learning Media Query for Mobile*/
-@media only screen and (min-width:200px) and (max-width: 480px) {
+@media only screen and (min-width:200px) and (max-width: 770px) {
     .start-learning {
-        background-color: #F5F4F5;
-        border-bottom: 2px solid #E9EAEA;
-        border-top: 2px solid #E9EAEA;
+        border-bottom: 2px solid #cdb684;
+        border-top: 2px solid #cdb684;
         padding: 2rem 1rem;
     }
 
@@ -338,7 +389,7 @@ Start Learning
 
     .start-learning .card {
         width: 100%;
-        background-color: #D8D8D8;
+        background-color: #fff;
         margin: 0.5rem 0;
     }
 
@@ -389,16 +440,15 @@ Thesis Exhibit
     display: flex;
     flex-direction: column;
     width: 40%;
+    border: 2px solid #002e54;
+    border-bottom: none;
 }
 
 #Fisma, #now-then {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-#Fisma {
-    background-color: #D8D8D8;
+    border-bottom: 2px solid #002e54;
 }
 
 .thesis-block img {
@@ -411,8 +461,17 @@ Thesis Exhibit
     padding: 0 0.5rem;
 }
 
+.thesis-block:hover {
+    background-color: #002e54;
+    color: #fff;
+}
+
+.thesis-block:hover h3 {
+    color: #fff;
+}
+
 /*Thesis Exhibit Media Query for Mobile*/
-@media only screen and (min-width:200px) and (max-width: 480px) {
+@media only screen and (min-width:200px) and (max-width: 770px) {
     .thesis {
         padding: 1rem 0 1.5rem 0;
         /*margin: 1rem 0 ;*/
@@ -447,18 +506,23 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    background-color: #F3F5F5;
-    border-top: 2px solid #E0E2E2;
+    background-color: #002e54;
+    color: #fff;
+    border-top: 3px solid #cdb684;
 }
 
 footer a {
     text-decoration: none;
-    color: #767676;
+    color: #cdb684;
     padding: 0 0.5rem
 }
 
+.footer-links a:hover {
+    color: #fff;
+}
+
 /*Footer Media Query for Mobile*/
-@media only screen and (min-width:200px) and (max-width: 480px) {
+@media only screen and (min-width:200px) and (max-width: 770px) {
     footer {
         border-top: none;
         padding: 1rem;
