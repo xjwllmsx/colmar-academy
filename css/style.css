@@ -53,10 +53,11 @@ nav {
     flex-direction: column;
     justify-content: center;
     height: 4rem;
-    padding: 0 1.5rem;
     background-color: #002e54;
     color: #fff;
     border-bottom: 3px solid #cdb684;
+    position: sticky;
+    top: 0;
 }
 
 /*Desktop Wrapper*/
@@ -65,11 +66,13 @@ nav .wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 0 1.5rem;
 }
 
 /*Mobile Wrapper*/
 .mobile-wrapper {
     display: none;
+    margin: 0 1.5rem;
 }
 
 /*Logo*/
@@ -90,7 +93,7 @@ nav strong {
 }
 
 .nav-links a {
-    padding-left: 1rem;
+    padding-left: 2rem;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
