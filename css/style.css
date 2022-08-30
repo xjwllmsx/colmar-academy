@@ -57,6 +57,7 @@ nav {
     color: #fff;
     border-bottom: 3px solid #cdb684;
     position: sticky;
+    z-index: 10;
     top: 0;
 }
 
@@ -347,18 +348,27 @@ Start Learning
     color: #fff;
 }
 
-.start-learning .row {
+.start-learning .courses {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
-.start-learning .card {
-    width: 33.3125rem;
+.course-card {
+    width: 26%;
     margin: 1rem;
     background-color: #fff;
-    border-radius: 0.53rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    transition-property: all;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-in-out;
+}
+
+.course-card:hover {
+    transform: scale(1.075);
 }
 
 .start-learning img {
@@ -390,7 +400,7 @@ Start Learning
         align-items: center;
     }
 
-    .start-learning .card {
+    .course-card {
         width: 100%;
         background-color: #fff;
         margin: 0.5rem 0;
@@ -399,6 +409,7 @@ Start Learning
     .start-learning .text {
         margin: 1rem;
         padding: 0;
+        text-align: center;
     }
 
     .start-learning img {
