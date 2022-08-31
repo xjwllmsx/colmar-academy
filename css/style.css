@@ -84,6 +84,10 @@ nav .wrapper {
     align-items: center;
 }
 
+.logo p {
+    font-size: 1.5rem;
+}
+
 .gold-filter {
     filter: invert(100%) sepia(21%) saturate(5683%) hue-rotate(306deg) brightness(87%) contrast(84%);
 }
